@@ -1,0 +1,12 @@
+name: GitHub Skills
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start the course
+        uses: actions/hello-world-javascript-action@main
